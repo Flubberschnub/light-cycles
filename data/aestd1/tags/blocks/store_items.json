@@ -1,0 +1,16 @@
+{
+	"values": [
+		"#aestd1:furnaces",
+
+		"#aestd1:shulker_boxes",
+		"#aestd1:campfires",
+
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		"minecraft:dispenser",
+		"minecraft:dropper",
+		"minecraft:jukebox",
+		"minecraft:barrel",
+		"minecraft:lectern"
+	]
+}

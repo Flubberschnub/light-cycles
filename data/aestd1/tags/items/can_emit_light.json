@@ -1,0 +1,11 @@
+{
+	"values": [
+		"#aestd1:emit_light",
+		"#aestd1:furnaces",
+		"#aestd1:campfires",
+		
+		"minecraft:redstone_lamp",
+		"minecraft:redstone_ore",
+		"minecraft:redstone_torch"
+	]
+}
