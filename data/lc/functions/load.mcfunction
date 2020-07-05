@@ -1,5 +1,4 @@
 ##load
-execute as @a run say poof
 
 ##scoreboards
 scoreboard objectives add CycleID dummy
@@ -24,3 +23,6 @@ scoreboard players set 786 acceleration 40
 
 scoreboard players set 50 Constant 50
 scoreboard players set 100 Constant 100
+
+##message
+tellraw @a ["",{"text":"Reloaded!","underlined":true,"color":"green"},{"text":"   Light Cycles","bold":true,"italic":true,"color":"white"},{"text":" "},{"text":"by","color":"yellow"},{"text":" "},{"text":"F","color":"dark_aqua"},{"text":"lubberschnub","color":"dark_gray"}]

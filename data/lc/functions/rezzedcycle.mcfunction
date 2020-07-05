@@ -16,5 +16,10 @@ execute as @a run function lc:match/player/move
 execute as @e[tag=cyclecollider,nbt={HurtTime:10s}] run function lc:match/cyclecollider/derez
 execute as @e[tag=cyclestand,tag=derezzing] run function lc:derez/animate/tick
 
+##de-rez on get off cycle
+execute as @a[predicate=lc:lc/controllingbike,predicate=lc:lc/holdingbrake] run tag @s add derezcycle
+execute as @a[tag=derezcycle,predicate=!lc:lc/riding_cycle] run function lc:match/player/derez
+execute as @a[predicate=lc:lc/controllingbike,predicate=!lc:lc/holdingbrake,tag=derezcycle] run tag @s remove derezcycle
+
 ##sounds
 execute as @e[tag=cyclestand] run function lc:sounds/cycle
