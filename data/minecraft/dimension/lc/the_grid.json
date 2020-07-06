@@ -1,0 +1,35 @@
+{
+      "generator": {
+        "type": "minecraft:flat",
+        "seed": 0,
+        "settings": {
+          "biome": "minecraft:the_end",
+          "layers": [
+            {
+              "block": "minecraft:black_concrete",
+              "height": 1
+            },
+            {
+              "block": "minecraft:barrier",
+              "height": 1
+            },
+            {
+              "block": "minecraft:black_stained_glass",
+              "height": 10
+            },
+            {
+              "block": "minecraft:gray_stained_glass",
+              "height": 10
+            },
+            {
+              "block": "minecraft:black_stained_glass",
+              "height": 1
+            }
+          ],
+          "structures": {
+            "structures": {}
+          }
+        }
+      },
+      "type": "lc:digital_frontier"
+    }
