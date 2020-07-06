@@ -8,7 +8,7 @@ execute as @a[predicate=lc:lc/riding_cycle] run function lc:rotate/storecyclerot
 execute as @e[tag=cyclefacing] run function lc:rotate/storecyclerotation
 
 ##other stuff
-execute as @a[predicate=lc:lc/riding_cycle] if score @s CycleID = IDMatcher CycleID if entity @e[tag=cyclestand,tag=matchedid,tag=onground] run function lc:rotate/interpolate
-execute at @e[tag=cyclestand,tag=onground] if score @s CycleID = IDMatcher CycleID at @s facing entity @e[tag=cyclefacing,tag=matchedid,limit=1] feet rotated ~-90 ~ run tp @s ~ ~ ~ ~ ~
+execute as @a[predicate=lc:lc/riding_cycle] if score @s CycleID = IDMatcher CycleID if entity @e[tag=cyclestand,tag=matchedid,nbt={OnGround:1b}] run function lc:rotate/interpolate
+execute at @e[tag=cyclestand,nbt={OnGround:1b}] if score @s CycleID = IDMatcher CycleID at @s facing entity @e[tag=cyclefacing,tag=matchedid,limit=1] feet rotated ~-90 ~ run tp @s ~ ~ ~ ~ ~
 #kill @e[tag=cyclefacing]
 ##temp particles

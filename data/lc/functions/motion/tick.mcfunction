@@ -1,7 +1,7 @@
 ##motion tick
 
 ##onground tag
-execute at @e[tag=cyclecollider,tag=matchedid] run function lc:motion/collision/onground
+#execute at @e[tag=cyclecollider,tag=matchedid] run function lc:motion/collision/onground
 
 function lc:motion/drag
 execute if score @s CycleType matches 786 run function lc:motion/786/tick
