@@ -30,4 +30,4 @@ execute as @a[scores={clickbaton=1..}] run function lc:motion/boosthold
 #execute at @e[tag=playerfacing] run particle minecraft:angry_villager ~ ~ ~ 0 0 0 0 1
 
 ##rez and de-rez
-execute as @a[predicate=lc:lc/holdingclosedbaton,scores={clickbaton=1..},predicate=!lc:lc/riding_cycle,tag=!rezzedvehicle] at @s run function lc:rez/rezzing
+execute as @a[predicate=lc:lc/holdingclosedbaton,scores={clickbaton=1..},predicate=!lc:lc/riding_cycle,tag=!rezzedvehicle] at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run function lc:rez/rezzing
