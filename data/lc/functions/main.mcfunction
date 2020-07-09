@@ -11,8 +11,8 @@ execute as @a[predicate=lc:lc/holdingclosedbaton,tag=!rezzedvehicle] store resul
 execute as @a[tag=rezzedvehicle] at @s run function lc:match/player/removerezzedtag
 
 ##player cycleType
-scoreboard players reset @a CycleType
-execute as @a[predicate=lc:lc/holdingclosedbaton] store result score @s CycleType run data get entity @s SelectedItem.tag.CycleType 1
+scoreboard players reset @a[tag=!rezzedvehicle] CycleType
+execute as @a[predicate=lc:lc/holdingclosedbaton,tag=!rezzedvehicle] store result score @s CycleType run data get entity @s SelectedItem.tag.CycleType 1
 
 ##rez animations
 execute as @e[tag=rezzing,tag=cyclestand] at @s run function lc:rez/animate/tick

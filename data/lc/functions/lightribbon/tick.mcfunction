@@ -1,4 +1,7 @@
 ##lightribbon tick (run as cyclestand, from lc:move)
 
-##summon lightribbons
-execute at @s run function lc:lightribbon/summon
+##timer
+scoreboard players add @s ribbontimer 1
+execute if score @s ribbontimer matches 2.. run function lc:lightribbon/main
+#function lc:lightribbon/main
+execute if score @s ribbontimer matches 2.. run scoreboard players reset @s ribbontimer

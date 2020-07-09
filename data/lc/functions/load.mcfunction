@@ -15,6 +15,7 @@ scoreboard objectives add speed dummy
 scoreboard objectives add topSpeed dummy
 scoreboard objectives add acceleration dummy
 scoreboard objectives add rezanimate dummy
+scoreboard objectives add ribbontimer dummy
 
 ##786 stats
 scoreboard players set 786 topSpeed 2000

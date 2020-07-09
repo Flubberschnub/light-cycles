@@ -28,3 +28,7 @@ execute as @a[predicate=lc:lc/controllingbike,predicate=!lc:lc/holdingbrake,tag=
 
 ##sounds
 execute as @e[tag=cyclestand] at @s run function lc:sounds/cycle
+
+##ribbon lifetimer
+execute as @e[tag=lightribbon] run scoreboard players add @s ribbontimer 1
+kill @e[tag=lightribbon,scores={ribbontimer=160..}]
