@@ -3,4 +3,5 @@ summon minecraft:armor_stand ~ ~-100 ~ {NoGravity:1b,Invulnerable:1b,Fire:400,Sm
 tp @e[tag=newribbon] ~ ~ ~ ~ ~
 scoreboard players operation @e[tag=newribbon] CycleID = @s CycleID
 execute as @e[tag=newribbon] store result entity @s Pose.Head.[0] float 1 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[0]
+execute as @e[tag=newribbon] store result entity @s Pose.Head.[2] float -1.8 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
 tag @e[tag=newribbon] remove newribbon
