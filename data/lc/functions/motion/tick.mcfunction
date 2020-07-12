@@ -15,9 +15,8 @@ execute at @e[tag=cyclestand,tag=matchedid] if entity @e[tag=lightribbon,type=ar
 
 ##in air tilt
 execute as @e[tag=cyclestand,tag=matchedid] at @s if block ~ ~-0.1 ~ #lc:passthrough run data merge entity @s {Pose:{Head:[0.0f,0.0f,25.0f]}}
-execute as @e[tag=cyclestand,tag=matchedid] unless entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] at @s unless block ~ ~-1 ~ #lc:passthrough run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0001f]}}
+execute as @e[tag=cyclestand,tag=matchedid] unless entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] at @s unless block ~ ~-0.1 ~ #lc:passthrough run data merge entity @s {Pose:{Head:[0.0f,0.0f,0.0001f]}}
 
 ##fall discance derez
-execute store result score FallDistance Constant run data get entity @e[tag=cyclestand,tag=matchedid,limit=1] FallDistance 1
+
 execute as @e[tag=cyclestand,tag=matchedid] if score FallDistance Constant matches 50.. run function lc:derez/forcederez
-scoreboard players reset FallDistance Constant

@@ -14,12 +14,17 @@ scoreboard objectives add boosthold dummy
 scoreboard objectives add speed dummy
 scoreboard objectives add topSpeed dummy
 scoreboard objectives add acceleration dummy
+scoreboard objectives add braketorque dummy
+scoreboard objectives add accelrate dummy
 scoreboard objectives add rezanimate dummy
 scoreboard objectives add ribbontimer dummy
+scoreboard objectives add movinguptick dummy
 
 ##786 stats
 scoreboard players set 786 topSpeed 2000
 scoreboard players set 786 acceleration 40
+scoreboard players set 786 accelrate 10
+scoreboard players set 786 braketorque 40
 
 
 scoreboard players set 50 Constant 50
