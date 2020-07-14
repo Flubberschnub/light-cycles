@@ -4,8 +4,8 @@
 function lc:rotate/components/position
 
 ##store rotation in score
-execute as @a[predicate=lc:lc/riding_cycle,tag=matchedid] run function lc:rotate/storecyclerotation
-execute as @e[tag=cyclefacing,tag=matchedid] run function lc:rotate/storecyclerotation
+execute as @a[predicate=lc:lc/riding_cycle] run function lc:rotate/storecyclerotation
+execute as @e[tag=cyclefacing] run function lc:rotate/storecyclerotation
 
 ##other stuff
 execute as @a[predicate=lc:lc/riding_cycle,tag=matchedid] if entity @e[tag=cyclestand,tag=matchedid,nbt={OnGround:1b}] run function lc:rotate/interpolate

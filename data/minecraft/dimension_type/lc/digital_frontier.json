@@ -6,10 +6,10 @@
   "respawn_anchor_works": true,
   "bed_works": true,
   "has_raids": false,
-  "has_skylight": false,
+  "has_skylight": true,
   "has_ceiling": false,
-  "fixed_time": 6000,
-  "ambient_light": 0.5,
+  "fixed_time": 18000,
+  "ambient_light": 0.0,
   "logical_height": 256,
   "infiniburn": "minecraft:infiniburn_overworld"
 }

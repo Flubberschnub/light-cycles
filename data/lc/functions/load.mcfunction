@@ -25,6 +25,10 @@ scoreboard players set 786 topSpeed 2000
 scoreboard players set 786 acceleration 40
 scoreboard players set 786 accelrate 10
 scoreboard players set 786 braketorque 40
+scoreboard players set 5 topSpeed 2000
+scoreboard players set 5 acceleration 40
+scoreboard players set 5 accelrate 10
+scoreboard players set 5 braketorque 40
 
 
 scoreboard players set 50 Constant 50
