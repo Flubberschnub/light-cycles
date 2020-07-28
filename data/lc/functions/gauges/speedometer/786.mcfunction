@@ -19,6 +19,13 @@ execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed ma
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 1701..1800 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 1801..1900 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 1901..2000 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2001..2100 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2101..2200 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2201..2300 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2301..2400 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2401..2500 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2501..2600 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=ribboning] speed matches 2601..2700 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||||||||","color":"#A6E4FF","bold":true,"italic":false}
 ##786 speedometer not ribboning
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 1..100 run title @s actionbar {"text":"||","color":"white","bold":true,"italic":false}
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 101..200 run title @s actionbar {"text":"||||","color":"white","bold":true,"italic":false}
@@ -40,6 +47,13 @@ execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed m
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 1701..1800 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 1801..1900 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 1901..2000 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2001..2100 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2101..2200 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2201..2300 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2301..2400 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2401..2500 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2501..2600 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid,tag=!ribboning] speed matches 2601..2700 run title @s actionbar {"text":"||||||||||||||||||||||||||||||||||||||||||||||||||||||","color":"white","bold":true,"italic":false}
 
 ##speed effect
 effect clear @s speed
@@ -64,3 +78,4 @@ execute if score @e[tag=cyclestand,limit=1,tag=matchedid] speed matches 1601..17
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid] speed matches 1701..1800 run effect give @s speed 1 4 true
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid] speed matches 1801..1900 run effect give @s speed 1 5 true
 execute if score @e[tag=cyclestand,limit=1,tag=matchedid] speed matches 1901..2000 run effect give @s speed 1 5 true
+execute if score @e[tag=cyclestand,limit=1,tag=matchedid] speed matches 2001.. run effect give @s speed 1 5 true
