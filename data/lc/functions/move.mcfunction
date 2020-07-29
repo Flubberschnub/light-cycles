@@ -9,11 +9,12 @@ scoreboard players operation @s[nbt={OnGround:1b}] aestd.math.in = @s speed
 scoreboard players operation @s[tag=moveup] aestd.math.in = @s speed
 execute as @s[nbt={OnGround:1b}] run function aestd1:entity/set_motion_magnitude
 execute as @s[tag=moveup] run function aestd1:entity/set_motion_magnitude
+execute as @s run function lc:motion/tick
+execute as @s run function lc:rotate/tick
+kill @e[tag=aestd.context.position_cloud]
 ##moveup tick
 execute as @s[tag=moveup,scores={movinguptick=1..}] run scoreboard players remove @s movinguptick 1
 execute at @s[tag=moveup,scores={movinguptick=..0}] run tag @s remove moveup
-execute as @s run function lc:motion/tick
-execute as @s run function lc:rotate/tick
 
 ##speed gauges and stuff
 execute as @a[predicate=lc:lc/controllingbike,tag=matchedid] run function lc:gauges/speedometer
