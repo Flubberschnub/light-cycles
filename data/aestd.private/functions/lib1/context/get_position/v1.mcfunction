@@ -16,3 +16,4 @@ execute store result score #aestd aestd.pos.z run data get storage aestd:private
 scoreboard players operation @s aestd.pos.x = #aestd aestd.pos.x
 scoreboard players operation @s aestd.pos.y = #aestd aestd.pos.y
 scoreboard players operation @s aestd.pos.z = #aestd aestd.pos.z
+kill @e[tag=aestd.context.position_cloud]

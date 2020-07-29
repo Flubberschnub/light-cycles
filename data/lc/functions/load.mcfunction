@@ -14,11 +14,27 @@ scoreboard objectives add boosthold dummy
 scoreboard objectives add speed dummy
 scoreboard objectives add topSpeed dummy
 scoreboard objectives add acceleration dummy
+scoreboard objectives add braketorque dummy
+scoreboard objectives add accelrate dummy
 scoreboard objectives add rezanimate dummy
+scoreboard objectives add ribbontimer dummy
+scoreboard objectives add movinguptick dummy
+scoreboard objectives add circuitcolor dummy
 
 ##786 stats
-scoreboard players set 786 topSpeed 2000
+scoreboard players set ribboning topSpeed 1980
+scoreboard players set 786 topSpeed 2700
 scoreboard players set 786 acceleration 40
+scoreboard players set 786 accelrate 10
+scoreboard players set 786 braketorque 40
+scoreboard players set 5 topSpeed 2300
+scoreboard players set 5 acceleration 40
+scoreboard players set 5 accelrate 10
+scoreboard players set 5 braketorque 40
+scoreboard players set 4 topSpeed 2500
+scoreboard players set 4 acceleration 50
+scoreboard players set 4 accelrate 10
+scoreboard players set 4 braketorque 50
 
 
 scoreboard players set 50 Constant 50

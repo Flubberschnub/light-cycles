@@ -14,3 +14,4 @@ execute store result score #aestd aestd.pos.y run data get storage aestd:private
 # Save score to executing entity, if there is one
 scoreboard players operation @s aestd.rot.x = #aestd aestd.rot.x
 scoreboard players operation @s aestd.rot.y = #aestd aestd.rot.y
+kill @e[tag=aestd.context.position_cloud]
