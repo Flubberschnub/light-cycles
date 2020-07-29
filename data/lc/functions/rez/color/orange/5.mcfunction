@@ -2,7 +2,7 @@
 ##summon cycle
 
 ##cyclestand
-summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,Small:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightcycle","cyclestand","justrezzed","rezzing"],ArmorItems:[{},{},{},{id:"minecraft:diamond",Count:1b,tag:{CustomModelData:51}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightcycle","cyclecart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightcycle"}'}
+summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,Small:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightcycle","cyclestand","justrezzed","rezzing"],ArmorItems:[{},{},{},{id:"minecraft:diamond",Count:1b,tag:{CustomModelData:251}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightcycle","cyclecart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightcycle"}'}
 execute run tp @e[tag=cyclestand,tag=justrezzed] ~ ~ ~ ~-90 ~
 ##cyclefacing
 execute at @e[tag=cyclestand,tag=justrezzed] rotated ~90 ~ run summon minecraft:area_effect_cloud ^ ^ ^3 {CustomNameVisible:0b,Duration:199980,Tags:["lightcycle","cyclefacing","justrezzed"],CustomName:'{"text":"lightcycle"}'}

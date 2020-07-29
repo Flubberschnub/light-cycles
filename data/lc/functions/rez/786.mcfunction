@@ -17,6 +17,7 @@ execute at @e[tag=cyclefacing,tag=justrezzed] run tp @e[tag=cyclecollider,tag=ju
 execute store result score @e[tag=justrezzed] CycleID run scoreboard players get @s CycleID
 scoreboard players set @e[tag=justrezzed,tag=lightcycle] CycleType 786
 scoreboard players set @e[tag=justrezzed,tag=cyclestand] topSpeed 1500
+scoreboard players operation @e[tag=justrezzed,tag=lightcycle] circuitcolor = @s circuitcolor
 scoreboard players set @e[tag=justrezzed,tag=cyclestand] speed 0
 execute as @s[predicate=lc:flags/is_sprinting] run scoreboard players set @e[tag=justrezzed,tag=cyclestand] speed 500
 
