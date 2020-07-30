@@ -1,6 +1,6 @@
 ##Get player motion
-execute store result score X playermotion run data get entity @s Motion[0] 100
-execute store result score Z playermotion run data get entity @s Motion[2] 100
+execute store result score X playermotion run data get entity @s Motion[0] 300
+execute store result score Z playermotion run data get entity @s Motion[2] 300
 
 ##Detect if going forward or back
 execute if entity @s[y_rotation=-135..-45] if score X playermotion matches 1.. run tag @s add accelerating
