@@ -22,7 +22,7 @@ scoreboard objectives add movinguptick dummy
 scoreboard objectives add circuitcolor dummy
 
 ##786 stats
-scoreboard players set ribboning topSpeed 1980
+scoreboard players set ribboning topSpeed 2000
 scoreboard players set 786 topSpeed 2700
 scoreboard players set 786 acceleration 40
 scoreboard players set 786 accelrate 10
