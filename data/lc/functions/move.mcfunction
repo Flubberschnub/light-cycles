@@ -17,11 +17,11 @@ execute as @s[tag=moveup,scores={movinguptick=1..}] run scoreboard players remov
 execute at @s[tag=moveup,scores={movinguptick=..0}] run tag @s remove moveup
 
 ##speed gauges and stuff
-execute as @a[predicate=lc:lc/controllingbike,tag=matchedid] run function lc:gauges/speedometer
+execute as @a[predicate=lc:lc/riding_cycle,tag=matchedid] run function lc:gauges/speedometer
 
 ##light ribbons
-execute if entity @s[tag=ribboning] if entity @a[tag=matchedid,predicate=lc:lc/controllingbike] if entity @e[tag=cyclecollider,tag=matchedid,nbt={HurtTime:10s}] run function lc:lightribbon/deactivate
-execute if entity @s[tag=!ribboning] if entity @a[tag=matchedid,predicate=lc:lc/controllingbike] if entity @e[tag=cyclecollider,tag=matchedid,nbt={HurtTime:10s}] run function lc:lightribbon/activate
+execute if entity @s[tag=ribboning] if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if entity @e[tag=cyclecollider,tag=matchedid,nbt={HurtTime:10s}] run function lc:lightribbon/deactivate
+execute if entity @s[tag=!ribboning] if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if entity @e[tag=cyclecollider,tag=matchedid,nbt={HurtTime:10s}] run function lc:lightribbon/activate
 execute as @s[tag=ribboning] at @s run function lc:lightribbon/tick
 
 ##reset falldistance

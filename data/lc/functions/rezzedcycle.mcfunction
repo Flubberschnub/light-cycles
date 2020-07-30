@@ -14,7 +14,7 @@ team join nocollide @e[tag=cyclecollider]
 
 ##cyclecontrols for rider
 execute as @a[predicate=!lc:lc/riding_cycle] run clear @s carrot_on_a_stick{BikeControl:1}
-execute as @a[predicate=lc:lc/riding_cycle,predicate=!lc:lc/holdingcontrols,tag=rezzedvehicle] at @s run function lc:bikecontrols/give
+#execute as @a[predicate=lc:lc/riding_cycle,predicate=!lc:lc/holdingcontrols,tag=rezzedvehicle] at @s run function lc:bikecontrols/give
 
 ##motion
 execute as @a at @s run function lc:match/player/move
@@ -28,9 +28,9 @@ execute as @e[tag=cyclecollider,tag=!derezzing] at @s if block ~ ~ ~ minecraft:w
 execute as @e[tag=cyclestand,tag=derezzing] at @s run function lc:derez/animate/tick
 
 ##de-rez on get off cycle
-execute as @a[predicate=lc:lc/controllingbike,predicate=lc:lc/holdingbrake] run tag @s add derezcycle
+execute as @a[predicate=lc:lc/riding_cycle,tag=derezcycle] run tag @s remove derezcycle
+execute as @a[predicate=lc:lc/riding_cycle,x_rotation=60..90] run tag @s add derezcycle
 execute as @a[tag=derezcycle,predicate=!lc:lc/riding_cycle] at @s run function lc:match/player/derez
-execute as @a[predicate=lc:lc/controllingbike,predicate=!lc:lc/holdingbrake,tag=derezcycle] run tag @s remove derezcycle
 
 ##sounds
 execute as @e[tag=cyclestand] at @s run function lc:sounds/cycle
