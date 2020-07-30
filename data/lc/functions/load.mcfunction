@@ -22,6 +22,10 @@ scoreboard objectives add movinguptick dummy
 scoreboard objectives add circuitcolor dummy
 scoreboard objectives add playermotion dummy
 
+##nocollide team
+team add nocollide
+team modify nocollide collisionRule never
+
 ##786 stats
 scoreboard players set ribboning topSpeed 2000
 scoreboard players set 786 topSpeed 2700
