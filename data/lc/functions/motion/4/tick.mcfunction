@@ -1,3 +1,3 @@
 ##g5 motion tick
-execute if entity @a[predicate=lc:lc/accelerating,tag=matchedid] run function lc:motion/4/accelerate
-execute if entity @a[predicate=lc:lc/braking,tag=matchedid] run function lc:motion/4/brake
+execute if entity @a[tag=matchedid,tag=accelerating] run function lc:motion/4/accelerate
+execute if entity @a[tag=matchedid,tag=braking] run function lc:motion/4/brake
