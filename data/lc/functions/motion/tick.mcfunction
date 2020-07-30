@@ -3,6 +3,10 @@
 ##onground tag
 execute at @e[tag=cyclestand,tag=matchedid] run function lc:motion/collision/onground
 
+scoreboard players reset X playermotion
+scoreboard players reset Z playermotion
+execute as @a[predicate=lc:lc/riding_cycle,tag=matchedid] run function lc:bikecontrols/ws
+
 function lc:motion/drag
 execute if score @s CycleType matches 786 run function lc:motion/786/tick
 execute if score @s CycleType matches 5 run function lc:motion/5/tick
