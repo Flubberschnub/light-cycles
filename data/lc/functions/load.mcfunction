@@ -20,6 +20,7 @@ scoreboard objectives add rezanimate dummy
 scoreboard objectives add ribbontimer dummy
 scoreboard objectives add movinguptick dummy
 scoreboard objectives add circuitcolor dummy
+scoreboard objectives add playermotion dummy
 
 ##786 stats
 scoreboard players set ribboning topSpeed 1980
