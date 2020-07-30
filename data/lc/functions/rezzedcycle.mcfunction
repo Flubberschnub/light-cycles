@@ -9,6 +9,9 @@ effect clear @a[tag=rezzedvehicle,predicate=!lc:lc/riding_cycle] jump_boost
 ##invisible minecart
 execute as @e[type=#minecraft:minecarts,tag=!invisible_minecart] run function lc:invisicarts
 
+##nocollide for collider
+team join nocollide @e[tag=cyclecollider]
+
 ##cyclecontrols for rider
 execute as @a[predicate=!lc:lc/riding_cycle] run clear @s carrot_on_a_stick{BikeControl:1}
 execute as @a[predicate=lc:lc/riding_cycle,predicate=!lc:lc/holdingcontrols,tag=rezzedvehicle] at @s run function lc:bikecontrols/give
