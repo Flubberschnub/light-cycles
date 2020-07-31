@@ -42,6 +42,7 @@ scoreboard players set 4 accelrate 10
 scoreboard players set 4 braketorque 50
 
 
+scoreboard players set maxtimer ribbontimer 50
 scoreboard players set 50 Constant 50
 scoreboard players set 100 Constant 100
 
