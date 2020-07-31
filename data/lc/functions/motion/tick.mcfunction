@@ -19,8 +19,10 @@ execute at @e[tag=cyclecollider,tag=matchedid] unless block ^ ^ ^1 #lc:passthrou
 execute at @e[tag=cyclecollider,tag=matchedid] unless block ~ ~ ~ #lc:passthrough positioned ~ ~ ~ run function lc:motion/collision/oncollide
 execute at @e[tag=cyclecollider,tag=matchedid] unless block ^ ^ ^-1 #lc:passthrough positioned ^ ^ ^-1 run function lc:motion/collision/oncollide
 execute at @e[tag=cyclecollider,tag=matchedid] unless block ^ ^ ^-2 #lc:passthrough positioned ^ ^ ^-2 run function lc:motion/collision/oncollide
+execute at @e[tag=cyclecollider,tag=matchedid] if entity @e[tag=lightcycle,tag=!matchedid,distance=..1.2] run function lc:motion/collision/oncollide
 execute at @e[tag=cyclecollider,tag=matchedid] if entity @e[tag=lightribbon,type=armor_stand,distance=..2,tag=!newribbon] run function lc:motion/collision/oncollide
 execute at @e[tag=cyclestand,tag=matchedid] if entity @e[tag=lightribbon,type=armor_stand,distance=..0.1,tag=!newribbon] run function lc:motion/collision/oncollide
+
 
 ##in air tilt
 execute as @e[tag=cyclestand,tag=matchedid] at @s if block ~ ~-0.1 ~ #lc:passthrough run data merge entity @s {Pose:{Head:[0.0f,0.0f,25.0f]}}
