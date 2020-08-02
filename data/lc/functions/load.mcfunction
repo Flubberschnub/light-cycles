@@ -26,22 +26,30 @@ scoreboard objectives add playermotion dummy
 team add nocollide
 team modify nocollide collisionRule never
 
-##786 stats
-scoreboard players set ribboning topSpeed 2000
-scoreboard players set 786 topSpeed 2700
-scoreboard players set 786 acceleration 40
+##cycle stats
+scoreboard players set ribboning topSpeed 2500
+scoreboard players set 786 topSpeed 5000
+scoreboard players set 786 acceleration 35
 scoreboard players set 786 accelrate 10
-scoreboard players set 786 braketorque 40
-scoreboard players set 5 topSpeed 2300
+scoreboard players set 786 braketorque 65
+
+scoreboard players set 5 topSpeed 4000
 scoreboard players set 5 acceleration 40
 scoreboard players set 5 accelrate 10
-scoreboard players set 5 braketorque 40
-scoreboard players set 4 topSpeed 2500
-scoreboard players set 4 acceleration 50
+scoreboard players set 5 braketorque 50
+
+scoreboard players set 4 topSpeed 4500
+scoreboard players set 4 acceleration 55
 scoreboard players set 4 accelrate 10
-scoreboard players set 4 braketorque 50
+scoreboard players set 4 braketorque 60
+
+scoreboard players set 73 topSpeed 5000
+scoreboard players set 73 acceleration 45
+scoreboard players set 73 accelrate 10
+scoreboard players set 73 braketorque 65
 
 
+scoreboard players set maxtimer ribbontimer 50
 scoreboard players set 50 Constant 50
 scoreboard players set 100 Constant 100
 
