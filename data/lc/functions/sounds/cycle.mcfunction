@@ -32,4 +32,24 @@ execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score 
 execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 2701..2800 run function lc:sounds/cycle/enginesspeed28
 execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 2801..2900 run function lc:sounds/cycle/enginesspeed29
 execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 2901..3000 run function lc:sounds/cycle/enginesspeed30
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3001..3100 run function lc:sounds/cycle/enginesspeed31
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3101..3200 run function lc:sounds/cycle/enginesspeed32
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3201..3300 run function lc:sounds/cycle/enginesspeed33
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3301..3400 run function lc:sounds/cycle/enginesspeed34
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3401..3500 run function lc:sounds/cycle/enginesspeed35
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3501..3600 run function lc:sounds/cycle/enginesspeed36
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3601..3700 run function lc:sounds/cycle/enginesspeed37
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3701..3800 run function lc:sounds/cycle/enginesspeed38
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3801..3900 run function lc:sounds/cycle/enginesspeed39
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 3901..4000 run function lc:sounds/cycle/enginesspeed40
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4001..4100 run function lc:sounds/cycle/enginesspeed41
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4101..4200 run function lc:sounds/cycle/enginesspeed42
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4201..4300 run function lc:sounds/cycle/enginesspeed43
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4301..4400 run function lc:sounds/cycle/enginesspeed44
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4401..4500 run function lc:sounds/cycle/enginesspeed45
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4501..4600 run function lc:sounds/cycle/enginesspeed46
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4601..4700 run function lc:sounds/cycle/enginesspeed47
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4701..4800 run function lc:sounds/cycle/enginesspeed48
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4801..4900 run function lc:sounds/cycle/enginesspeed49
+execute as @s if entity @a[tag=matchedid,predicate=lc:lc/riding_cycle] if score @e[tag=cyclestand,tag=matchedid,limit=1] speed matches 4901..5000 run function lc:sounds/cycle/enginesspeed50
 tag @e[tag=matchedid] remove matchedid

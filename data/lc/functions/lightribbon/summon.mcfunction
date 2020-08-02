@@ -5,6 +5,6 @@ tp @e[tag=newribbon] ~ ~ ~ ~ ~
 scoreboard players operation @e[tag=newribbon] CycleID = @s CycleID
 scoreboard players operation @e[tag=newribbon] circuitcolor = @s circuitcolor
 execute as @e[tag=newribbon] store result entity @s Pose.Head.[0] float 1 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[0]
-execute as @s[tag=!moveup] as @e[tag=newribbon] store result entity @s Pose.Head.[2] float -1.8 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
-execute as @s[tag=moveup] as @e[tag=newribbon] store result entity @s Pose.Head.[2] float 1.2 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
+#execute as @s[tag=!moveup] as @e[tag=newribbon] store result entity @s Pose.Head.[2] float -1.8 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
+#execute as @s[tag=moveup] as @e[tag=newribbon] store result entity @s Pose.Head.[2] float 1.2 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
 tag @e[tag=newribbon] remove newribbon

@@ -18,5 +18,5 @@ scoreboard players set @s[scores={aestd.math.var3=2000..}] aestd.math.var3 2000
 
 # Set motion
 execute store result entity @s Motion[0] double 0.005 run scoreboard players get @s aestd.math.var
-execute store result entity @s Motion[1] double 0.005 run scoreboard players get @s aestd.math.var2
+#execute store result entity @s Motion[1] double 0.005 run scoreboard players get @s aestd.math.var2
 execute store result entity @s Motion[2] double 0.005 run scoreboard players get @s aestd.math.var3

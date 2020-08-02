@@ -14,7 +14,8 @@ team join nocollide @e[tag=cyclecollider]
 
 ##cyclecontrols for rider
 execute as @a[predicate=!lc:lc/riding_cycle] run clear @s carrot_on_a_stick{BikeControl:1}
-#execute as @a[predicate=lc:lc/riding_cycle,predicate=!lc:lc/holdingcontrols,tag=rezzedvehicle] at @s run function lc:bikecontrols/give
+execute as @a[predicate=!lc:lc/holdingcontrols] run clear @s carrot_on_a_stick{BikeControl:1}
+execute as @a[predicate=lc:lc/riding_cycle,predicate=!lc:lc/holdingcontrols,tag=rezzedvehicle] at @s run function lc:bikecontrols/give
 
 ##motion
 execute as @a at @s run function lc:match/player/move
@@ -37,4 +38,4 @@ execute as @e[tag=cyclestand] at @s run function lc:sounds/cycle
 
 ##ribbon lifetimer
 execute as @e[tag=lightribbon] run scoreboard players add @s ribbontimer 1
-kill @e[tag=lightribbon,scores={ribbontimer=50..}]
+execute as @e[tag=lightribbon] if score @s ribbontimer >= maxtimer ribbontimer run kill @s
