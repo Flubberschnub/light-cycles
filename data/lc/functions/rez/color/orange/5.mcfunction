@@ -25,4 +25,4 @@ execute as @e[tag=cyclestand,tag=justrezzed] facing entity @e[tag=cyclefacing,ta
 
 tag @e[tag=justrezzed] remove justrezzed
 
-execute at @s run playsound lightcycle.rez master @a[distance=..10] ~ ~ ~ 5 1
+execute at @s run playsound lightcycle.rez master @a[distance=..30] ~ ~ ~ 5 1
