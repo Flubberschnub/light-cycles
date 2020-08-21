@@ -1,6 +1,7 @@
 {
  "values": [
  "lc:load",
+ "lj:load",
  "#load:__init"
  ]
 }

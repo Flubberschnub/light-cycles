@@ -1,10 +1,4 @@
 
-##rider effects
-effect give @a[predicate=lc:lc/riding_cycle] invisibility 1 0 true
-effect give @a[predicate=lc:lc/riding_cycle] jump_boost 1 20 true
-effect clear @a[tag=rezzedvehicle,predicate=!lc:lc/riding_cycle] invisibility
-effect clear @a[tag=rezzedvehicle,predicate=!lc:lc/riding_cycle] jump_boost
-#execute at @a[predicate=lc:lc/riding_cycle] run particle barrier ~ ~ ~ 0 0 0 0 1
 
 ##invisible minecart
 execute as @e[type=#minecraft:minecarts,tag=!invisible_minecart] run function lc:invisicarts

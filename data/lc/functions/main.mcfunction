@@ -12,9 +12,6 @@ execute as @a[predicate=lc:lc/holdingclosedbaton,predicate=!lc:lc/riding_cycle,t
 
 execute as @a[predicate=lc:lc/holdingclosedbaton,tag=!rezzedvehicle] store result score @s CycleID run data get entity @s SelectedItem.tag.CycleID 1
 
-##remove rezzedvehicle tag
-execute as @a[tag=rezzedvehicle] at @s run function lc:match/player/removerezzedtag
-
 ##player cycleType
 scoreboard players reset @a[tag=!rezzedvehicle] CycleType
 execute as @a[predicate=lc:lc/holdingclosedbaton,tag=!rezzedvehicle] store result score @s CycleType run data get entity @s SelectedItem.tag.CycleType 1
@@ -38,6 +35,3 @@ execute as @e[tag=playerfacing] run data merge entity @s {Age:0}
 
 ##rez and de-rez
 execute as @a[predicate=lc:lc/holdingclosedbaton,scores={clickbaton=1..},predicate=!lc:lc/riding_cycle,tag=!rezzedvehicle] at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run function lc:rez/rezzing
-
-##boost reset
-execute as @a[scores={clickbaton=1..}] run scoreboard players reset @s clickbaton
