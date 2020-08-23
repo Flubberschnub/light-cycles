@@ -36,8 +36,9 @@ execute as @e[tag=jetfacing2d] run data merge entity @s {Age:0}
 execute as @e[tag=playerfacing2d] run data merge entity @s {Age:0}
 
 
-#execute at @e[tag=jetfacing] run particle barrier ~ ~ ~ 0 0 0 0 1
-#execute at @e[tag=playerfacing] run particle minecraft:angry_villager ~ ~ ~ 0 0 0 0 1
+#execute at @e[tag=jetfacing2d] run particle barrier ~ ~ ~ 0 0 0 0 1
+#execute at @e[tag=jetstand] run particle cloud ^ ^ ^3 0 0 0 0 1
+#execute at @e[tag=playerfacingx] run particle minecraft:angry_villager ~ ~ ~ 0 0 0 0 1
 
 ##rez and de-rez
 execute as @a[predicate=lj:lj/holdingclosedbaton,scores={clickbaton=1..},predicate=!lj:lj/riding_jet,tag=!rezzedvehicle] at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run function lj:rez/rezzing

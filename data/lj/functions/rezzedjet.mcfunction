@@ -29,9 +29,11 @@ execute as @a[predicate=lj:lj/riding_jet,tag=derezjet] run tag @s remove derezje
 execute as @a[predicate=lj:lj/riding_jet,x_rotation=60..90] run tag @s add derezjet
 execute as @a[tag=derezjet,predicate=!lj:lj/riding_jet] at @s run function lj:match/player/derez
 
+##de-rez when speed is 0
+execute as @e[tag=jetstand,tag=!derezzing,tag=!rezzing,scores={speed=..0}] at @s run function lj:match/jetstand/forcederez
+
+##fall distance
+execute as @e[tag=jetstand] run data merge entity @s {FallDistance:0}
+
 ##sounds
 execute as @e[tag=jetstand] at @s run function lj:sounds/jet
-
-##ribbon lifetimer
-execute as @e[tag=lightribbon] run scoreboard players add @s ribbontimer 1
-execute as @e[tag=lightribbon] if score @s ribbontimer >= maxtimer ribbontimer run kill @s

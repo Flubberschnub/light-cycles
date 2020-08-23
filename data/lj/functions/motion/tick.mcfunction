@@ -8,7 +8,7 @@ scoreboard players reset Z playermotion
 execute as @a[predicate=lj:lj/riding_jet,tag=matchedid] run function lj:jetcontrols/ws
 
 function lj:motion/drag
-execute at @s unless block ~ ~-0.2 ~ #lj:passthrough if score @s JetType matches 4 run function lj:motion/4/tick
+execute at @s if score @s JetType matches 4 run function lj:motion/4/tick
 
 tag @a[tag=matchedid] remove accelerating
 tag @a[tag=matchedid] remove braking

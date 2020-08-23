@@ -4,7 +4,10 @@
 scoreboard objectives add JetID dummy
 scoreboard objectives add JetType dummy
 scoreboard objectives add x_rot dummy
-scoreboard objectives add x_rot_zone
+scoreboard objectives add x_rot_zone dummy
+scoreboard objectives add sputtertimer dummy
+scoreboard objectives add prevtiltangle dummy
+scoreboard objectives add tiltanglediff dummy
 
 ##jet stats
 scoreboard players set jet4 topSpeed 4500
