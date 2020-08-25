@@ -5,7 +5,7 @@ execute if score @a[tag=matchedid,limit=1] circuitcolor matches 2 run summon min
 scoreboard players operation @e[tag=newbullet] JetID = @s JetID
 scoreboard players operation @e[tag=newbullet] circuitcolor = @s circuitcolor
 execute as @e[tag=newbullet] store result entity @s Pose.Head.[0] float -1 run data get entity @e[tag=jetstand,limit=1,tag=matchedid] Pose.Head.[2]
-tp @e[tag=newbullet] ~ ~-0.5 ~ ~ ~
+execute as @e[tag=newbullet] positioned ~ ~ ~ run function lj:guns/bullettp
 #execute as @s[tag=!moveup] as @e[tag=newribbon] store result entity @s Pose.Head.[2] float -1.8 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
 #execute as @s[tag=moveup] as @e[tag=newribbon] store result entity @s Pose.Head.[2] float 1.2 run data get entity @e[tag=cyclestand,limit=1,tag=matchedid] Pose.Head.[2]
 tag @e[tag=newbullet] remove newbullet

@@ -5,6 +5,9 @@
 ##invisible minecart
 #execute as @e[type=#minecraft:minecarts,tag=!invisible_minecart] run function lj:invisicarts
 
+##thruster sputter
+execute as @e[tag=jetstand] run function lj:motion/thrustersputter
+
 ##nocollide for collider
 team join nocollide @e[tag=jetcollider]
 

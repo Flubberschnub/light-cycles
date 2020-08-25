@@ -1,0 +1,23 @@
+{
+	"replace":false ,
+  "values": [
+    "minecraft:oak_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:birch_sapling",
+    "minecraft:jungle_sapling",
+    "minecraft:acacia_sapling",
+    "minecraft:dark_oak_sapling",
+    "minecraft:cobweb",
+		"#minecraft:leaves",
+		"minecraft:cactus",
+		"minecraft:sugar_cane",
+		"minecraft:dead_bush",
+		"#minecraft:flowers",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+		"#aestd1:glass",
+		"#aestd1:glass_panes",
+		"minecraft:sweet_berry_bush",
+		"minecraft:scaffolding"
+  ]
+}

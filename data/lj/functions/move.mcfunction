@@ -1,5 +1,4 @@
 ##move (run as cyclestand)
-execute as @e[tag=jetstand,tag=matchedid] store result score tempYPos Constant run data get entity @s Pos[1] 1
 
 
 function aestd1:entity/set_motion_from_rotation2d
