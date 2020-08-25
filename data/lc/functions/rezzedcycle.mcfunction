@@ -19,6 +19,7 @@ execute as @e[tag=cyclecollider,nbt={HurtTime:10s}] at @s run function lc:match/
 
 ##de-rez in water
 execute as @e[tag=cyclecollider,tag=!derezzing] at @s if block ~ ~ ~ minecraft:water run function lc:match/cyclecollider/forcederez
+execute as @e[tag=cyclecollider,tag=!derezzing] at @s if block ~ ~ ~ minecraft:lava run function lc:match/cyclecollider/forcederez
 
 execute as @e[tag=cyclestand,tag=derezzing] at @s run function lc:derez/animate/tick
 

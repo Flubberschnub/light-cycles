@@ -18,9 +18,6 @@ execute as @a[predicate=lj:lj/holdingclosedbaton,tag=!rezzedvehicle] store resul
 scoreboard players reset @a[tag=!rezzedvehicle] JetType
 execute as @a[predicate=lj:lj/holdingclosedbaton,tag=!rezzedvehicle] store result score @s JetType run data get entity @s SelectedItem.tag.JetType 1
 
-##player color
-execute as @a run function lj:color/batoncolor/tick
-
 ##rez animations
 execute as @e[tag=rezzing,tag=jetstand] at @s run function lj:rez/animate/tick
 

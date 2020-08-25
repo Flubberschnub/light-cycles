@@ -1,5 +1,6 @@
 ##derez self
 execute as @e[tag=jetstand,tag=matchedid] run tag @s add derezzing
+execute as @e[tag=jetstand,tag=matchedid] run tag @s remove rezzing
 effect clear @a[tag=matchedid] jump_boost
 effect clear @a[tag=matchedid] invisibility
 tag @a[tag=rezzedvehicle,tag=matchedid] remove rezzedvehicle

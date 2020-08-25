@@ -6,6 +6,10 @@
       "mainhand": {
         "item": "carrot_on_a_stick",
         "nbt": "{Baton:1,Closed:0,JetControl:1,VehicleType:2}"
+      },
+      "offhand": {
+        "item": "carrot_on_a_stick",
+        "nbt": "{Baton:1,Closed:0,JetControl:1,VehicleType:2}"
       }
     }
   }

@@ -17,7 +17,7 @@ scoreboard players reset @a[tag=!rezzedvehicle] CycleType
 execute as @a[predicate=lc:lc/holdingclosedbaton,tag=!rezzedvehicle] store result score @s CycleType run data get entity @s SelectedItem.tag.CycleType 1
 
 ##player color
-execute as @a run function lc:color/batoncolor/tick
+#execute as @a run function lc:color/batoncolor/tick
 
 ##rez animations
 execute as @e[tag=rezzing,tag=cyclestand] at @s run function lc:rez/animate/tick

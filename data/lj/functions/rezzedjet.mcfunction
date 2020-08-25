@@ -16,11 +16,15 @@ execute as @a[predicate=lj:lj/riding_jet,predicate=!lj:lj/holdingcontrols,tag=re
 ##motion
 execute as @a at @s run function lj:match/player/move
 
+##guns
+execute as @e[tag=jetstand] run function lj:match/jetstand/guns
+
 ##de-rez
 execute as @e[tag=jetcollider,nbt={HurtTime:10s}] at @s run function lj:match/jetcollider/derez
 
 ##de-rez in water
 execute as @e[tag=jetcollider,tag=!derezzing] at @s if block ~ ~ ~ minecraft:water run function lj:match/jetcollider/forcederez
+execute as @e[tag=jetcollider,tag=!derezzing] at @s if block ~ ~ ~ minecraft:lava run function lj:match/jetcollider/forcederez
 
 execute as @e[tag=jetstand,tag=derezzing] at @s run function lj:derez/animate/tick
 

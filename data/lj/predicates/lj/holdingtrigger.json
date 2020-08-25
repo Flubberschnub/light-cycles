@@ -5,7 +5,7 @@
     "equipment": {
       "mainhand": {
         "item": "carrot_on_a_stick",
-        "nbt": "{Brake:1}"
+        "nbt": "{Trigger:1}"
       }
     }
   }

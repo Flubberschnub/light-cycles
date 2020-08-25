@@ -8,6 +8,9 @@ effect give @a[predicate=lv:lv/riding_vehicle] jump_boost 1 20 true
 effect clear @a[tag=rezzedvehicle,predicate=!lv:lv/riding_vehicle] invisibility
 effect clear @a[tag=rezzedvehicle,predicate=!lv:lv/riding_vehicle] jump_boost
 
+##player color
+execute as @a run function lv:color/batoncolor/tick
+
 ##ribbon lifetimer
 execute as @e[tag=lightribbon] run scoreboard players add @s ribbontimer 1
 execute as @e[tag=lightribbon] if score @s ribbontimer >= maxtimer ribbontimer run kill @s

@@ -20,3 +20,4 @@ execute at @e[tag=jetcollider,tag=matchedid] unless block ^ ^ ^-2 #lj:passthroug
 execute at @e[tag=jetcollider,tag=matchedid] if entity @e[tag=lightjet,tag=!matchedid,distance=..1.2] run function lj:motion/collision/oncollide
 execute at @e[tag=jetcollider,tag=matchedid] if entity @e[tag=lightribbon,type=armor_stand,distance=..2,tag=!newribbon] run function lj:motion/collision/oncollide
 execute at @e[tag=jetstand,tag=matchedid] if entity @e[tag=lightribbon,type=armor_stand,distance=..0.1,tag=!newribbon] run function lj:motion/collision/oncollide
+execute at @e[tag=jetcollider,tag=matchedid,tag=gunhit] run function lj:motion/collision/movingderez

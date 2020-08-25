@@ -15,7 +15,7 @@ execute if score @s tiltanglediff matches 100.. run function lj:rotate/tilt/thre
 
 #execute as @s run function lj:rotate/tilt/getangleleft
 execute if score @s tiltangle matches 2.. store result entity @e[tag=jetstand,tag=matchedid,limit=1] Pose.Head.[0] float -1 run scoreboard players get @s tiltangle
-scoreboard players reset -1 Constant
+#scoreboard players reset -1 Constant
 scoreboard players operation @s prevtiltangle = @s tiltangle
 
 scoreboard players reset tempAngle tiltangle
