@@ -3,7 +3,12 @@
 ##shoot jetcollider or jetstand
 tag @e[tag=jetcollider,tag=!matchedid,distance=..5] add gunhit
 tag @e[tag=cyclecollider,tag=!matchedid,distance=..5] add gunhit
+
+
 effect give @e[type=#lj:livingthings,distance=..5,tag=!matchedid] minecraft:instant_damage 1 0 true
+
+##shoot lightribbon
+scoreboard players add @e[distance=..5,tag=lightribbon] ribbontimer 10
 
 ##sounds
 execute unless block ~ ~ ~ #lj:passthrough run playsound lightjet.guns.hit master @a[distance=..10] ~ ~ ~
