@@ -20,3 +20,4 @@ execute if block ~ ~ ~ #lj:stonic run particle minecraft:block stone ^ ^ ^-0.5 0
 
 tag @s remove hitshot
 scoreboard players reset @s shootRange
+tag @a[tag=whizsound] remove whizsound

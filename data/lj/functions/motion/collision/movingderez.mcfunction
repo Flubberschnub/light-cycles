@@ -9,4 +9,5 @@ execute at @s rotated ~90 ~ run particle firework ^ ^1 ^2 0 0 0 0.5 200 force
 execute at @s rotated ~90 ~ run particle explosion_emitter ^ ^1 ^2 0 0 0 0.1 1 force
 effect give @e[distance=..2] instant_damage 1 1 true
 kill @e[tag=matchedid,tag=jetcart]
+tag @s remove rezzing
 tag @s add derezzing
