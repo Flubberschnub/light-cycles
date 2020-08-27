@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "lj:lj/riding_jet"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lc:lc/riding_cycle"
+    }
+  ]
+}

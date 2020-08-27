@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Light Baton","color":"gray","bold":true,"italic":false}',Lore:['{"text":"Encom 786","color":"dark_gray","italic":true}']},CustomModelData:786,Baton:1,CycleType:786,Closed:1}}}
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Light Baton","color":"gray","bold":true,"italic":false}',Lore:['{"text":"Encom 786","color":"dark_gray","italic":true}']},CustomModelData:786,Baton:1,CycleType:786,Closed:1,VehicleType:1}}}
