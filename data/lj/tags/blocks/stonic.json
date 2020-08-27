@@ -1,0 +1,13 @@
+{
+	"replace":false ,
+  "values": [
+    "minecraft:stone",
+		"minecraft:smooth_stone",
+		"minecraft:smooth_stone_slab",
+		"minecraft:stone_stairs",
+		"minecraft:cobblestone",
+		"minecraft:cobblestone_slab",
+		"minecraft:cobblestone_stairs",
+		"#minecraft:stone_bricks"
+  ]
+}
