@@ -32,4 +32,4 @@ execute as @e[tag=cyclestand,tag=matchedid] unless entity @a[tag=matchedid,predi
 ##fall discance derez
 
 execute as @e[tag=cyclestand,tag=matchedid] if score FallDistance Constant matches 50.. run function lc:derez/forcederez
-execute at @e[tag=jetcollider,tag=matchedid,tag=gunhit,tag=!derezzing] run function lj:motion/collision/movingderez
+execute at @e[tag=cyclecollider,tag=matchedid,tag=gunhit,tag=!derezzing] run function lc:motion/collision/movingderez
