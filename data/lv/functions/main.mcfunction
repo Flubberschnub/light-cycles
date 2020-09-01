@@ -1,4 +1,5 @@
 ##main
+execute in lc:the_grid run function lv:accuratetimer/tick
 function lj:main
 function lc:main
 
