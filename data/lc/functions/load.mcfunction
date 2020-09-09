@@ -27,6 +27,7 @@ team add nocollide
 team modify nocollide collisionRule never
 
 ##cycle stats
+scoreboard players set ribbonminimum topSpeed 1980
 scoreboard players set ribboning topSpeed 2500
 scoreboard players set 786 topSpeed 5000
 scoreboard players set 786 acceleration 35
