@@ -13,7 +13,8 @@ function aestd1:entity/set_motion_from_rotation
 #execute as @s[tag=moveup] run function aestd1:entity/set_motion_magnitude
 scoreboard players operation @s aestd.math.in = @s speed
 function aestd1:entity/set_motion_magnitude
-execute as @s[tag=moveup] run data modify entity @s Motion[1] set value 0.5d
+#execute as @s[tag=moveup] run data modify entity @s Motion[1] set value 0.5d
+execute as @s[tag=moveup] store result entity @s Motion[1] double 0.0004 run scoreboard players get @s speed
 execute as @s run function lc:motion/tick
 execute as @s run function lc:rotate/tick
 kill @e[tag=aestd.context.position_cloud]
