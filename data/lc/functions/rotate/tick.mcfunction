@@ -12,7 +12,8 @@ execute as @a[predicate=lc:lc/riding_cycle,tag=matchedid] if entity @e[tag=cycle
 #execute as @e[tag=cyclefacing,tag=matchedid,limit=1] at @s facing entity @e[tag=cyclestand,tag=matchedid] feet facing ^ ^ ^-1 run tp @s ~ ~ ~ ~-90 ~
 #execute as @e[tag=cyclestand,tag=matchedid] run data modify entity @s Rotation[0] set from entity @e[tag=cyclefacing,tag=matchedid,limit=1] Rotation[0]
 #execute as @e[tag=cyclefacing,tag=matchedid,limit=1] at @s run tp @s ~ ~ ~ ~90 ~
-execute as @e[tag=cyclefacing,tag=matchedid] run data modify entity @s Motion[1] set from entity @e[tag=cyclestand,tag=matchedid,limit=1] Motion[1]
+#execute as @e[tag=cyclefacing,tag=matchedid] run data modify entity @s Motion[1] set from entity @e[tag=cyclestand,tag=matchedid,limit=1] Motion[1]
+execute as @e[tag=cyclefacing,tag=matchedid] store result entity @s Motion[1] double 0.001 run data get entity @e[tag=cyclestand,tag=matchedid,limit=1] Motion[1] 1000
 execute at @e[tag=cyclestand,tag=matchedid] at @s facing entity @e[tag=cyclefacing,tag=matchedid,limit=1] feet rotated ~-90 ~ run tp @s ~ ~ ~ ~ ~
 execute as @e[tag=cyclestand,tag=matchedid] run data modify entity @s Motion[1] set from entity @e[tag=cyclefacing,tag=matchedid,limit=1] Motion[1]
 execute as @e[tag=cyclefacing,tag=matchedid] run data modify entity @s Motion[1] set value 0d
