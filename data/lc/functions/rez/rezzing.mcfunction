@@ -9,3 +9,6 @@ execute if score @s CycleType matches 73 run function lc:rez/73
 ##color variant 2 (orange)
 execute if score @s CycleType matches 5 if score @s circuitcolor matches 2 run function lc:rez/color/orange/5
 execute if score @s CycleType matches 4 if score @s circuitcolor matches 2 run function lc:rez/color/orange/4
+
+execute if score @s CycleType matches 5 if score @s circuitcolor matches 3 run function lc:rez/color/green/5
+execute if score @s CycleType matches 4 if score @s circuitcolor matches 3 run function lc:rez/color/green/4

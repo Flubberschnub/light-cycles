@@ -2,7 +2,7 @@
 ##summon jet
 
 ##jetstand
-execute at @s if block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing","airrez"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:241}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
+execute at @s if block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing","airrez"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:341}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
 execute at @s unless block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:341}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
 execute run tp @e[tag=jetstand,tag=justrezzed] ~ ~ ~ ~-90 ~
 ##jetfacingx

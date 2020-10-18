@@ -8,10 +8,14 @@ scoreboard players reset Z playermotion
 execute as @a[predicate=lc:lc/riding_cycle,tag=matchedid] run function lc:bikecontrols/ws
 
 function lc:motion/drag
-execute at @s unless block ~ ~-0.2 ~ #lc:passthrough if score @s CycleType matches 786 run function lc:motion/786/tick
-execute at @s unless block ~ ~-0.2 ~ #lc:passthrough if score @s CycleType matches 5 run function lc:motion/5/tick
-execute at @s unless block ~ ~-0.2 ~ #lc:passthrough if score @s CycleType matches 4 run function lc:motion/4/tick
-execute at @s unless block ~ ~-0.2 ~ #lc:passthrough if score @s CycleType matches 73 run function lc:motion/73/tick
+execute at @s[tag=!inAir] if score @s CycleType matches 786 run function lc:motion/786/tick
+execute at @s[tag=!inAir] if score @s CycleType matches 5 run function lc:motion/5/tick
+execute at @s[tag=!inAir] if score @s CycleType matches 4 run function lc:motion/4/tick
+execute at @s[tag=!inAir] if score @s CycleType matches 73 run function lc:motion/73/tick
+execute at @s[tag=inAir,tag=moveup] if score @s CycleType matches 786 run function lc:motion/786/tick
+execute at @s[tag=inAir,tag=moveup] if score @s CycleType matches 5 run function lc:motion/5/tick
+execute at @s[tag=inAir,tag=moveup] if score @s CycleType matches 4 run function lc:motion/4/tick
+execute at @s[tag=inAir,tag=moveup] if score @s CycleType matches 73 run function lc:motion/73/tick
 
 tag @a[tag=matchedid] remove accelerating
 tag @a[tag=matchedid] remove braking
