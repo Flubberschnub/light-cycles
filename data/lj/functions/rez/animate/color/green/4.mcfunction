@@ -1,0 +1,22 @@
+##g4 animation
+execute if score @s rezanimate matches 2 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:341}
+execute if score @s rezanimate matches 4 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:342}
+execute if score @s rezanimate matches 6 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:343}
+execute if score @s rezanimate matches 8 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:344}
+execute if score @s rezanimate matches 10 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:345}
+execute if score @s rezanimate matches 12 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:346}
+execute if score @s rezanimate matches 14 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:347}
+execute if score @s rezanimate matches 16 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:348}
+execute if score @s rezanimate matches 18 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:349}
+execute if score @s rezanimate matches 20 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3410}
+execute if score @s rezanimate matches 21 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3411}
+execute if score @s rezanimate matches 22 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3412}
+execute if score @s rezanimate matches 23 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3413}
+execute if score @s rezanimate matches 24 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3414}
+execute if score @s rezanimate matches 25 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3415}
+execute if score @s rezanimate matches 26 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3416}
+execute if score @s rezanimate matches 27 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3417}
+execute if score @s rezanimate matches 28 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3418}
+execute if score @s rezanimate matches 29 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3419}
+execute if score @s rezanimate matches 30 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3420}
+execute if score @s rezanimate matches 31 run replaceitem entity @s armor.head minecraft:feather{CustomModelData:34}
