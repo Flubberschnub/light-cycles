@@ -1,6 +1,7 @@
 ##tick
 scoreboard players add @s rezanimate 1
 execute if score @s JetType matches 4 run function lj:rez/animate/4
+execute if score @s JetType matches 5 run function lj:rez/animate/5
 
 ##color variants
 execute if score @s JetType matches 5 if score @s circuitcolor matches 2 run function lj:rez/animate/color/orange/5

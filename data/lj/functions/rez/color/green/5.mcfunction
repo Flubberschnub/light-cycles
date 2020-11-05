@@ -2,8 +2,8 @@
 ##summon jet
 
 ##jetstand
-execute at @s if block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing","airrez"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:241}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
-execute at @s unless block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:241}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
+execute at @s if block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing","airrez"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:351}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
+execute at @s unless block ~ ~-1 ~ #lj:passthrough run summon minecraft:armor_stand ~ ~-50 ~ {CustomNameVisible:0b,Invulnerable:1b,NoGravity:0b,Silent:1b,PersistenceRequired:1b,DisabledSlots:4144959,Tags:["lightjet","jetstand","justrezzed","rezzing"],ArmorItems:[{},{},{},{id:"minecraft:feather",Count:1b,tag:{CustomModelData:351}}],Invisible:1b,Passengers:[{id:"minecraft:minecart",Invulnerable:1b,Tags:["lightjet","jetcart","invisible_minecart","justrezzed"]}],CustomName:'{"text":"lightjet"}'}
 execute run tp @e[tag=jetstand,tag=justrezzed] ~ ~ ~ ~-90 ~
 ##jetfacingx
 execute at @e[tag=jetstand,tag=justrezzed] rotated ~90 ~ run summon minecraft:area_effect_cloud ^ ^ ^3 {CustomNameVisible:0b,Duration:199980,Tags:["lightjet","jetfacingx","justrezzed"],CustomName:'{"text":"lightjet"}'}
@@ -20,7 +20,7 @@ execute at @e[tag=jetfacing2d,tag=justrezzed] run tp @e[tag=jetcollider,tag=just
 ##other stuff
 #execute as @e[tag=jetstand,tag=justrezzed] run data merge entity @s {NoGravity:0b}
 execute store result score @e[tag=justrezzed] JetID run scoreboard players get @s JetID
-scoreboard players set @e[tag=justrezzed,tag=lightjet] JetType 4
+scoreboard players set @e[tag=justrezzed,tag=lightjet] JetType 5
 scoreboard players operation @e[tag=justrezzed,tag=lightjet] circuitcolor = @s circuitcolor
 scoreboard players set @e[tag=justrezzed,tag=jetstand] speed 0
 scoreboard players set @e[tag=justrezzed,tag=jetstand,tag=airrez] speed 1000
