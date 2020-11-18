@@ -55,4 +55,4 @@ scoreboard players set 50 Constant 50
 scoreboard players set 100 Constant 100
 
 ##message
-tellraw @a ["",{"text":"Reloaded!","underlined":true,"color":"green"},{"text":"   TRON Vehicles v1.2.5","bold":true,"italic":true,"color":"white"},{"text":" "},{"text":"by","color":"yellow"},{"text":" "},{"text":"F","color":"dark_aqua"},{"text":"lubberschnub","color":"dark_gray"}]
+tellraw @a ["",{"text":"Reloaded!","underlined":true,"color":"green"},{"text":"   TRON Vehicles v1.2.6","bold":true,"italic":true,"color":"white"},{"text":" "},{"text":"by","color":"yellow"},{"text":" "},{"text":"F","color":"dark_aqua"},{"text":"lubberschnub","color":"dark_gray"}]
