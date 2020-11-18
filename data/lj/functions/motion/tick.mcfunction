@@ -9,6 +9,7 @@ execute as @a[predicate=lj:lj/riding_jet,tag=matchedid] run function lj:jetcontr
 
 function lj:motion/drag
 execute at @s if score @s JetType matches 4 run function lj:motion/4/tick
+execute at @s if score @s JetType matches 5 run function lj:motion/5/tick
 
 tag @a[tag=matchedid] remove accelerating
 tag @a[tag=matchedid] remove braking

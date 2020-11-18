@@ -1,0 +1,22 @@
+##786 animation
+execute if score @s rezanimate matches 2 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:51}
+execute if score @s rezanimate matches 4 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:52}
+execute if score @s rezanimate matches 6 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:53}
+execute if score @s rezanimate matches 8 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:54}
+execute if score @s rezanimate matches 10 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:55}
+execute if score @s rezanimate matches 12 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:56}
+execute if score @s rezanimate matches 14 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:57}
+execute if score @s rezanimate matches 16 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:58}
+execute if score @s rezanimate matches 18 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:59}
+execute if score @s rezanimate matches 20 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:510}
+execute if score @s rezanimate matches 21 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:511}
+execute if score @s rezanimate matches 22 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:512}
+execute if score @s rezanimate matches 23 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:513}
+execute if score @s rezanimate matches 24 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:514}
+execute if score @s rezanimate matches 25 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:515}
+execute if score @s rezanimate matches 26 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:516}
+execute if score @s rezanimate matches 27 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:517}
+execute if score @s rezanimate matches 28 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:518}
+execute if score @s rezanimate matches 29 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:519}
+execute if score @s rezanimate matches 30 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:520}
+execute if score @s rezanimate matches 31 run replaceitem entity @s armor.head minecraft:gunpowder{CustomModelData:5}

@@ -18,3 +18,8 @@ scoreboard players set jet4 topSpeed 4500
 scoreboard players set jet4 acceleration 55
 scoreboard players set jet4 accelrate 10
 scoreboard players set jet4 braketorque 60
+
+scoreboard players set jet5 topSpeed 4000
+scoreboard players set jet5 acceleration 40
+scoreboard players set jet5 accelrate 10
+scoreboard players set jet5 braketorque 50
