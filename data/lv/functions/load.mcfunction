@@ -1,5 +1,7 @@
 ##scoreboards
 scoreboard objectives add derezzes dummy
+scoreboard objectives add derezzed dummy
+scoreboard objectives add exploded dummy
 scoreboard objectives add value dummy
 
 scoreboard players set MILLION Constant 1000000
