@@ -1,6 +1,7 @@
 ##movingderez
 scoreboard players set @s[tag=!derezzing] rezanimate 16
 execute at @s[tag=!derezzing] run playsound lightcycle.crash master @a[distance=..100] ~ ~ ~ 3 1 0.1
+scoreboard players add @a[tag=matchedid] exploded 1
 data merge entity @s[tag=!derezzing] {Motion:[0.0,0.0,0.0]}
 scoreboard players set @s speed 0
 execute at @s rotated ~90 ~ run particle flash ^ ^ ^2 0 0 0 0 1 force

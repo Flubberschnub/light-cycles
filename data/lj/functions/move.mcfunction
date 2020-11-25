@@ -1,6 +1,6 @@
 ##move (run as cyclestand)
 
-
+data remove entity @s Motion.[1]
 function aestd1:entity/set_motion_from_rotation2d
 scoreboard players operation @s aestd.math.in = @s speed
 function aestd1:entity/set_motion_magnitude
